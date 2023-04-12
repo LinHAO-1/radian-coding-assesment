@@ -1,0 +1,30 @@
+type Car {
+  id: Float!
+  make: String!
+  model: String!
+  year: Float!
+  color: String!
+}
+
+type CarGroup {
+  make: String!
+  items: [Car!]!
+}
+
+type Query {
+  getAllCars: [Car!]!
+  getCarsByMake(make: String!): [Car!]!
+  groupCarsByMake: [CarGroup!]!
+}
+
+type Mutation {
+  addCar(carInput: CarInput!): Car!
+  addCars(carInputs: [CarInput!]!): [Car!]!
+}
+
+input CarInput {
+  make: String!
+  model: String!
+  year: Float!
+  color: String!
+}
