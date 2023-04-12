@@ -32,26 +32,26 @@ Queries to use
 
 getAllCars
 
-{
+```{
   "query": "query { getAllCars { id make model year color } }"
-}
+}```
 
 getCarsByMake (This will retrieve for exmaple, all Toyotas)
 
-{
+```{
   "query": "query { getCarsByMake(make: \"Toyota\") { id make model year color } }"
-}
+}```
 
 groupCarsByMake (This will return all cars but group them by make)
 
-{
+```{
   "query": "{ groupCarsByMake { make items { id model year color } } }"
-}
+}```
 
 addCar
 
 
-{
+```{
   "query": "mutation AddCar($carInput: CarInput!) { addCar(carInput: $carInput) { id make model year color } }",
   "variables": {
     "carInput": {
@@ -61,12 +61,12 @@ addCar
       "color": "Blue"
     }
   }
-}
+}```
 
 addCars (This will add a list of cars)
 
 
-{
+```{
   "query": "mutation AddCars($carInputs: [CarInput!]!) { addCars(carInputs: $carInputs) { id make model year color } }",
   "variables": {
     "carInputs": [
@@ -84,7 +84,7 @@ addCars (This will add a list of cars)
       }
     ]
   }
-}
+}```
 
 
 
