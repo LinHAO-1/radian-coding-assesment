@@ -50,7 +50,7 @@ Use http://localhost:3000/graphql
 }
 ```
 
-## addCarr
+## addCar
 
 
 ```{
