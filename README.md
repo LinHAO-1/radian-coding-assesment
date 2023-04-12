@@ -28,27 +28,29 @@
 
 Use http://localhost:3000/graphql
 
-##Queries to use
+## Queries to use
 
-##getAllCars
+## getAllCars
 
 ```{
   "query": "query { getAllCars { id make model year color } }"
 }
-
-##getCarsByMake (This will retrieve for exmaple, all Toyotas)
+```
+## getCarByMake (This will retrieve for example, all Toyotas)
 
 ```{
   "query": "query { getCarsByMake(make: \"Toyota\") { id make model year color } }"
 }
+```
 
 groupCarsByMake (This will return all cars but group them by make)
 
 ```{
   "query": "{ groupCarsByMake { make items { id model year color } } }"
 }
+```
 
-##addCar
+## addCarr
 
 
 ```{
@@ -62,9 +64,9 @@ groupCarsByMake (This will return all cars but group them by make)
     }
   }
 }
+```
 
-##addCars (This will add a list of cars)
-
+## addCars(This will add a list of cars)
 
 ```{
   "query": "mutation AddCars($carInputs: [CarInput!]!) { addCars(carInputs: $carInputs) { id make model year color } }",
@@ -85,7 +87,7 @@ groupCarsByMake (This will return all cars but group them by make)
     ]
   }
 }
-
+```
 
 
 
