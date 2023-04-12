@@ -43,7 +43,7 @@ Use http://localhost:3000/graphql
 }
 ```
 
-groupCarsByMake (This will return all cars but group them by make)
+## groupCarsByMake (This will return all cars but group them by make)
 
 ```{
   "query": "{ groupCarsByMake { make items { id model year color } } }"
