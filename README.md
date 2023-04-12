@@ -34,19 +34,19 @@ getAllCars
 
 ```{
   "query": "query { getAllCars { id make model year color } }"
-}```
+}
 
 getCarsByMake (This will retrieve for exmaple, all Toyotas)
 
 ```{
   "query": "query { getCarsByMake(make: \"Toyota\") { id make model year color } }"
-}```
+}
 
 groupCarsByMake (This will return all cars but group them by make)
 
 ```{
   "query": "{ groupCarsByMake { make items { id model year color } } }"
-}```
+}
 
 addCar
 
@@ -61,7 +61,7 @@ addCar
       "color": "Blue"
     }
   }
-}```
+}
 
 addCars (This will add a list of cars)
 
@@ -84,7 +84,7 @@ addCars (This will add a list of cars)
       }
     ]
   }
-}```
+}
 
 
 
