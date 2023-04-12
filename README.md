@@ -27,6 +27,8 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 Use http://localhost:3000/graphql
+
+
 in the root make a .env file and add the postgreSQL database url
 
 ## Queries to use
